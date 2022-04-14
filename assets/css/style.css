@@ -17,26 +17,26 @@ body{
   }
 
 
-  .content {
-    grid-area: content;
-    background-color: yellowgreen;
-    height: 650px;
-    
-    
-  }
-  .content h1{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-  }
-
+.content {
+  grid-area: content;
+  background-color: yellowgreen;
+  height: 650px;
   
-  .main-nav {
-    grid-area: nav;
-    background-color: wheat;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-  }
+  
+}
+.content h1{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.main-nav {
+  grid-area: nav;
+  background-color: wheat;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
 
 .marcas{ 
     width: 100%;
@@ -49,15 +49,15 @@ body{
 }
 
 
-  .side {
-    grid-area: sidebar;
-    background-color: bisque;
-    
-  }
-  .ad {
-    grid-area: ad;
-    
-  }
+.side {
+  grid-area: sidebar;
+  background-color: bisque;
+  
+}
+.ad {
+  grid-area: ad;
+  
+}
 
 .ad .curso,
 .ad .repuesto {

@@ -89,6 +89,26 @@ body{
       "footer";
   }
 
+.box { 
+    border-radius: 10px;
+    height: 60px;
+    width: 500px;
+    margin: auto auto;
+}
+
+.box1 {
+    background-color: wheat;
+}
+
+.box:hover {
+    transform: scale(1.5);
+}
+
+.box1 {
+    transition: all;
+    transition-duration: 2s;
+}
+
 
 
 

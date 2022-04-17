@@ -19,7 +19,7 @@ body{
 
 .content {
   grid-area: content;
-  background-color: yellowgreen;
+  background-color: white;
   height: 650px;
   
   
@@ -28,12 +28,13 @@ body{
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
+  
 }
 
 
 .main-nav {
   grid-area: nav;
-  background-color: wheat;
+  background-color: antiquewhite;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: larger;
 }
@@ -49,6 +50,7 @@ body{
 }
 
 
+
 .side {
   grid-area: sidebar;
   background-color: bisque;
@@ -59,11 +61,17 @@ body{
   
 }
 
-.ad .curso,
+
 .ad .repuesto {
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 250px;
 }
+
+.ad .curso{
+width: 400px;
+  height: 150px;
+}
+
 
   #texto{
     display: inline-block;
@@ -74,7 +82,7 @@ body{
     grid-area: footer;
     background-color: red;
     text-align: center;
-    height: 60px;
+    height: 72px;
   }
 
   .wrapper {

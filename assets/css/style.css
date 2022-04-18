@@ -24,7 +24,7 @@ body{
   
   
 }
-.content h1{
+.content h4{
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
@@ -393,7 +393,7 @@ span.psw {
         "header  header"
         "nav     nav"
         "sidebar content"
-        "ad      footer";
+        "footer     footer";
     }
     nav ul {
       display: flex;
@@ -412,6 +412,7 @@ span.psw {
         "footer footer  footer";
      }
      nav ul {
+       display: flex;
        flex-direction: column;
      }
   }
@@ -424,11 +425,12 @@ span.psw {
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas:
       "header header  header"
-      "nav    content sidebar"
-      "nav    content ad"
+      "nav    content  sidebar"
+      "nav    content    ad"
       "footer footer  footer";
    }
    nav ul {
+     display: flex;
      flex-direction: column;
    }
 }

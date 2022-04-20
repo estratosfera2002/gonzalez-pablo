@@ -97,6 +97,11 @@ width: 400px;
       "footer";
   }
 
+  .clase A {
+    width: 40%;
+    height: 40%;
+  }
+
 /* TRANSICIONES / ANIMACIONES */
 
 .box { 

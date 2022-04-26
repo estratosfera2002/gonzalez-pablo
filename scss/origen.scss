@@ -1,15 +1,12 @@
-$azulClaro: #09FFE6;
-$verdeClaro: #04AA6D;
+@import 'variables';
 
 body{
     background-image: -moz-linear-gradient(2);
-    // background-color: rgb(0, 255, 255);
     background-color: $azulClaro;
   }
 
 .main-head {
     grid-area: header;
-    // background-color: aqua;
     background-color: $azulClaro;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

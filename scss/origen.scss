@@ -1,11 +1,16 @@
+$azulClaro: #09FFE6;
+$verdeClaro: #04AA6D;
+
 body{
     background-image: -moz-linear-gradient(2);
-    background-color: aqua;
-}
+    // background-color: rgb(0, 255, 255);
+    background-color: $azulClaro;
+  }
 
 .main-head {
     grid-area: header;
-    background-color: aqua;
+    // background-color: aqua;
+    background-color: $azulClaro;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
@@ -171,7 +176,7 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: $verdeClaro;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -210,20 +215,20 @@ input[type=text], select, textarea {
   
   /* Set a style for all buttons */
   button {
-    background-color: #04AA6D;
+    background-color: $verdeClaro;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+
+    /* Add a hover effect for buttons */
+    &:hover {
+      opacity: 0.8;
+    }
   }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
-    opacity: 0.8;
-  }
-  
+
   /* Extra style for the cancel button (red) */
   .cancelbtn {
     width: auto;

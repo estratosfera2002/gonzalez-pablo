@@ -5,11 +5,16 @@ body {
   background-color: $azulClaro;
 }
 
+.text-centered {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
 .main-head {
   grid-area: header;
   background-color: $azulClaro;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  // text-align: center;
+  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  @extend .text-centered;
   font-size: x-large;
   height: 100px;
 }
@@ -18,14 +23,13 @@ body {
   grid-area: content;
   background-color: white;
   height: 650px;
-  
-  
 }
+
 .content h4{
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  // text-align: center;
+  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  @extend .text-centered;
   font-weight: bold;
-  
 }
 
 

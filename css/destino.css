@@ -3,11 +3,14 @@ body {
   background-color: #09FFE6;
 }
 
+.text-centered, .content h4, .main-head {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 .main-head {
   grid-area: header;
   background-color: #09FFE6;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: x-large;
   height: 100px;
 }
@@ -19,8 +22,6 @@ body {
 }
 
 .content h4 {
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
 }
 

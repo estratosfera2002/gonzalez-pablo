@@ -41,6 +41,14 @@ body {
   height: 75%;
 }
 
+h1 {
+  font-style: italic;
+}
+
+li {
+  font-style: italic;
+}
+
 .side {
   grid-area: sidebar;
   background-color: bisque;

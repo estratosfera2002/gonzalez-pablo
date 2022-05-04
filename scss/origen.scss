@@ -38,16 +38,27 @@ body{
   font-size: larger;
 }
 
-.marcas{ 
-    width: 100%;
-    height: 100%;
-    
-}
-.principal{
-    width: 100%;
-    height: 75%;
+@mixin size($width, $height) {
+ width: $width;
+ height: $height;
 }
 
+.marcas { 
+//    width: 100%;
+//    height: 100%;
+  @include size(100%, 100%);
+}
+.principal {
+    // width: 100%;
+    // height: 75%;
+  @include size(100%, 75%); 
+}
+
+@each $secciones in h1, li {
+  #{$secciones} { 
+    font-style: italic; 
+  }
+}
 
 
 .side {
@@ -62,44 +73,47 @@ body{
 
 
 .ad .repuesto {
-  width: 700px;
-  height: 250px;
+  // width: 700px;
+  // height: 250px;
+  @include size(700px, 250px); 
 }
 
-.ad .curso{
-width: 400px;
-  height: 150px;
+.ad .curso {
+  // width: 400px;
+  // height: 150px;
+  @include size(400px, 150px); 
 }
 
 
-  #texto{
-    display: inline-block;
-    vertical-align: middle;
-  }
+#texto {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-  .main-footer {
-    grid-area: footer;
-    background-color: red;
-    text-align: center;
-    height: 72px;
-  }
+.main-footer {
+  grid-area: footer;
+  background-color: red;
+  text-align: center;
+  height: 72px;
+}
 
-  .wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-      "header"
-      "nav"
-      "content"
-      "sidebar"
-      "ad"
-      "footer";
-  }
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
 
-  .clase A {
-    width: 40%;
-    height: 40%;
-  }
+.clase A {
+  // width: 40%;
+  // height: 40%;
+  @include size(40%, 40%); 
+}
 
   /* TRANSICIONES / ANIMACIONES */
 
@@ -156,8 +170,6 @@ width: 400px;
 }
 
 /* Planilla de contacto*/
-
-  
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {

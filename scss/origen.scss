@@ -1,20 +1,18 @@
 @import 'variables';
 
-body{
-    background-image: -moz-linear-gradient(2);
-    background-color: $azulClaro;
-  }
+body {
+  background-image: -moz-linear-gradient(2);
+  background-color: $azulClaro;
+}
 
 .main-head {
-    grid-area: header;
-    background-color: $azulClaro;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    height: 100px;
-    
-  }
-
+  grid-area: header;
+  background-color: $azulClaro;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  height: 100px;
+}
 
 .content {
   grid-area: content;
@@ -44,13 +42,13 @@ body{
 }
 
 .marcas { 
-//    width: 100%;
-//    height: 100%;
+  // width: 100%;
+  // height: 100%;
   @include size(100%, 100%);
 }
 .principal {
-    // width: 100%;
-    // height: 75%;
+  // width: 100%;
+  // height: 75%;
   @include size(100%, 75%); 
 }
 
@@ -117,11 +115,18 @@ body{
 
   /* TRANSICIONES / ANIMACIONES */
 
+$estilos: (
+  border-radius: 10px,
+  height: 60px,
+  width: 700px,
+  margin: auto auto,
+);
+
 .box { 
-    border-radius: 10px;
-    height: 60px;
-    width: 700px;
-    margin: auto auto;
+  border-radius: map-get($estilos, border-radius);
+  height: map-get($estilos, height);
+  width: map-get($estilos, width);
+  margin: map-get($estilos, margin);
 }
 
 .box1 {
